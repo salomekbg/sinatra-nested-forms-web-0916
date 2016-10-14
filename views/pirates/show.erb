@@ -1,7 +1,23 @@
-<h1>Display your Pirate here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pirate & Ship Data</title>
+  </head>
+  <body>
+    <h1>Pirate:</h1>
+    Name: <%= @pirate.name %>
+    Height:  <%= @pirate.height %>
+    Weight:  <%= @pirate.weight %>
 
+    <h2>First Ship:</h2>
+    Name:  <%= @ship_array[0].name %>
+    Type: <%= @ship_array[0].type %>
+    Booty: <%= @ship_array[0].booty %>
 
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+    <h2>Second Ship:</h2>
+    Name: <%= @ship_array[1].name %>
+    Type: <%= @ship_array[1].type %>
+    Booty: <%= @ship_array[1].booty %>
+  </body>
+</html>
