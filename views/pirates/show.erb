@@ -6,18 +6,15 @@
   </head>
   <body>
     <h1>Pirate:</h1>
-    Name: <%= @pirate.name %>
-    Height:  <%= @pirate.height %>
-    Weight:  <%= @pirate.weight %>
-
-    <h2>First Ship:</h2>
-    Name:  <%= @ship_array[0].name %>
-    Type: <%= @ship_array[0].type %>
-    Booty: <%= @ship_array[0].booty %>
-
-    <h2>Second Ship:</h2>
-    Name: <%= @ship_array[1].name %>
-    Type: <%= @ship_array[1].type %>
-    Booty: <%= @ship_array[1].booty %>
+    <p>Name: <%= @pirate.name %></p>
+    <p>Height:  <%= @pirate.height %></p>
+    <p>Weight:  <%= @pirate.weight %></p>
+    <br>
+    <h1>Ships:</h1>
+    <% @ships.each do |ship| %>
+    <p>Name: <%= ship.name %></p>
+    <p>Type: <%= ship.type %></p>
+    <p>Booty: <%= ship.booty %></p>
+    <% end %>
   </body>
 </html>
